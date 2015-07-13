@@ -2,6 +2,7 @@
 
 #pragma once
 
+
 #include <msclr/marshal_cppstd.h>
 #include <Casino/Card.h>
 
@@ -50,7 +51,9 @@ public:
 
 	~ManagedCard()
 	{
-		delete m_Impl;
+		//Only release managed resources here and call the finalizer
+		//Never reference unmanaged resources here.
+		this->!ManagedCard();
 	}
 	// Reference (http://stackoverflow.com/questions/946813/c-cli-converting-from-systemstring-to-stdstring)
 	virtual String^ ToString() override
@@ -61,11 +64,13 @@ public:
 
 protected:
 	//Reference https://msdn.microsoft.com/en-us/library/ms235281.aspx
+	//Reference https://msdn.microsoft.com/en-us/library/ke3a209d(v=vs.140).aspx
 	//Depending on how the garbage collector collects this class, either the 
 	//destructor or this, the finalizer will run. 
 	//The garbage collector will assure only one is ever executed.
 	!ManagedCard()
 	{
+		//Only clean up unmanaged resources here. Never reference managed resources here.
 		delete m_Impl;
 	}
 private:
