@@ -5,17 +5,17 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Casino", "Casino\Casino.vcxproj", "{D2F22A0C-2517-473E-87AE-4542AD960C83}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WarGame", "WarGame\WarGame.vcxproj", "{65BA671A-AF70-47CC-889E-B189C7F60429}"
-	ProjectSection(ProjectDependencies) = postProject
-		{D2F22A0C-2517-473E-87AE-4542AD960C83} = {D2F22A0C-2517-473E-87AE-4542AD960C83}
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedWar", "ManagedWar\ManagedWar.csproj", "{D3241989-C995-455A-A9C1-1CBA2EDACEE8}"
 	ProjectSection(ProjectDependencies) = postProject
 		{D2F22A0C-2517-473E-87AE-4542AD960C83} = {D2F22A0C-2517-473E-87AE-4542AD960C83}
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ManagedCasino", "ManagedCasino\ManagedCasino.vcxproj", "{6F9A2671-5D84-4930-B836-E7F369B94D2C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D2F22A0C-2517-473E-87AE-4542AD960C83} = {D2F22A0C-2517-473E-87AE-4542AD960C83}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NativeWar", "NativeWar\NativeWar.vcxproj", "{65BA671A-AF70-47CC-889E-B189C7F60429}"
 	ProjectSection(ProjectDependencies) = postProject
 		{D2F22A0C-2517-473E-87AE-4542AD960C83} = {D2F22A0C-2517-473E-87AE-4542AD960C83}
 	EndProjectSection
@@ -46,20 +46,6 @@ Global
 		{D2F22A0C-2517-473E-87AE-4542AD960C83}.Release|Win32.Build.0 = Release|Win32
 		{D2F22A0C-2517-473E-87AE-4542AD960C83}.Release|x86.ActiveCfg = Release|Win32
 		{D2F22A0C-2517-473E-87AE-4542AD960C83}.Release|x86.Build.0 = Release|Win32
-		{65BA671A-AF70-47CC-889E-B189C7F60429}.Debug|Any CPU.ActiveCfg = Debug|Win32
-		{65BA671A-AF70-47CC-889E-B189C7F60429}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
-		{65BA671A-AF70-47CC-889E-B189C7F60429}.Debug|Mixed Platforms.Build.0 = Debug|Win32
-		{65BA671A-AF70-47CC-889E-B189C7F60429}.Debug|Win32.ActiveCfg = Debug|Win32
-		{65BA671A-AF70-47CC-889E-B189C7F60429}.Debug|Win32.Build.0 = Debug|Win32
-		{65BA671A-AF70-47CC-889E-B189C7F60429}.Debug|x86.ActiveCfg = Debug|Win32
-		{65BA671A-AF70-47CC-889E-B189C7F60429}.Debug|x86.Build.0 = Debug|Win32
-		{65BA671A-AF70-47CC-889E-B189C7F60429}.Release|Any CPU.ActiveCfg = Release|Win32
-		{65BA671A-AF70-47CC-889E-B189C7F60429}.Release|Mixed Platforms.ActiveCfg = Release|Win32
-		{65BA671A-AF70-47CC-889E-B189C7F60429}.Release|Mixed Platforms.Build.0 = Release|Win32
-		{65BA671A-AF70-47CC-889E-B189C7F60429}.Release|Win32.ActiveCfg = Release|Win32
-		{65BA671A-AF70-47CC-889E-B189C7F60429}.Release|Win32.Build.0 = Release|Win32
-		{65BA671A-AF70-47CC-889E-B189C7F60429}.Release|x86.ActiveCfg = Release|Win32
-		{65BA671A-AF70-47CC-889E-B189C7F60429}.Release|x86.Build.0 = Release|Win32
 		{D3241989-C995-455A-A9C1-1CBA2EDACEE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D3241989-C995-455A-A9C1-1CBA2EDACEE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3241989-C995-455A-A9C1-1CBA2EDACEE8}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
@@ -89,6 +75,20 @@ Global
 		{6F9A2671-5D84-4930-B836-E7F369B94D2C}.Release|Win32.Build.0 = Release|Win32
 		{6F9A2671-5D84-4930-B836-E7F369B94D2C}.Release|x86.ActiveCfg = Release|Win32
 		{6F9A2671-5D84-4930-B836-E7F369B94D2C}.Release|x86.Build.0 = Release|Win32
+		{65BA671A-AF70-47CC-889E-B189C7F60429}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{65BA671A-AF70-47CC-889E-B189C7F60429}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{65BA671A-AF70-47CC-889E-B189C7F60429}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{65BA671A-AF70-47CC-889E-B189C7F60429}.Debug|Win32.ActiveCfg = Debug|Win32
+		{65BA671A-AF70-47CC-889E-B189C7F60429}.Debug|Win32.Build.0 = Debug|Win32
+		{65BA671A-AF70-47CC-889E-B189C7F60429}.Debug|x86.ActiveCfg = Debug|Win32
+		{65BA671A-AF70-47CC-889E-B189C7F60429}.Debug|x86.Build.0 = Debug|Win32
+		{65BA671A-AF70-47CC-889E-B189C7F60429}.Release|Any CPU.ActiveCfg = Release|Win32
+		{65BA671A-AF70-47CC-889E-B189C7F60429}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{65BA671A-AF70-47CC-889E-B189C7F60429}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{65BA671A-AF70-47CC-889E-B189C7F60429}.Release|Win32.ActiveCfg = Release|Win32
+		{65BA671A-AF70-47CC-889E-B189C7F60429}.Release|Win32.Build.0 = Release|Win32
+		{65BA671A-AF70-47CC-889E-B189C7F60429}.Release|x86.ActiveCfg = Release|Win32
+		{65BA671A-AF70-47CC-889E-B189C7F60429}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
