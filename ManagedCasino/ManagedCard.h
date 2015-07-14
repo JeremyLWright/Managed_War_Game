@@ -58,8 +58,7 @@ public:
 	// Reference (http://stackoverflow.com/questions/946813/c-cli-converting-from-systemstring-to-stdstring)
 	virtual String^ ToString() override
 	{
-		auto s = m_Impl->ToString();
-		return gcnew System::String(s.c_str());
+		return msclr::interop::marshal_as<String^>(m_Impl->ToString());
 	}
 
 protected:
